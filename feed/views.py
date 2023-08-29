@@ -32,7 +32,7 @@ class AddPostView(FormView):
         new_object = Post.objects.create(
             text=form.cleaned_data['text'] ,
             image = form.cleaned_data['image'],
-            des = form.cleaned_data['description']                
+            #des = form.cleaned_data['description']                
         )
         messages.add_message(self.request, messages.SUCCESS, 'Your post was successful')
         return super().form_valid(form)
