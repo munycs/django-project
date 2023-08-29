@@ -4,7 +4,7 @@ from sorl.thumbnail import ImageField
 class Post(models.Model):
     text = models.CharField(max_length=140, blank=False, null=False)
     image = ImageField()
-    des = models.CharField(max_length=5000, blank=False, null=False)
+    #des = models.CharField(max_length=5000, blank=False, null=False)
     def __str__(self):
         return self.text
 
